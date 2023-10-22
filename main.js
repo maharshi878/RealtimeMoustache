@@ -14,8 +14,7 @@ function setup() {
 }
 function gotPoses(results) {
   if(results.length > 0){
-    console.log("moustache X = " + results[0].pose.nose.x);
-    console.log("moustache Y = " + results[0].pose.nose.y);
+    
     noseX = results[0].pose.nose.x-40;
     noseY = results[0].pose.nose.y;
   }
